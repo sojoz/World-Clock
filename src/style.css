@@ -2,10 +2,34 @@ body {
   font-family: FreeMono, monospace;
 }
 
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.drop-down-menu {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  font-family: FreeMono, monospace;
+  padding: 10px;
+  margin: 0px 0px 0px 100px;
+}
+.date {
+  text-align: center;
+}
+
+.time {
+  text-align: center;
+}
 h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
 footer {
   text-align: center;
 }
