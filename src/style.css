@@ -8,7 +8,7 @@ body {
 .container {
   display: block;
   margin: 0 auto;
-  padding: 30px;
+  padding: 70px;
   max-width: 400px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 4px;
