@@ -16,37 +16,39 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select class="drop-down-menu">
+      <select class="drop-down-menu" id="cityChoice">
         <option value="">Select a city</option>
-        <option value="">Tokyo</option>
-        <option value="">Djibuti</option>
-        <option value="">Antanarivo</option>
-        <option value="">Los Angeles</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Africa/Djibouti">Djibuti</option>
+        <option value="Indian/Antananarivo">Antanarivo</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
       </select>
       <br />
       <br />
-      <div class="city" id="paris">
-        <div class="date-city">
-          <h2>Paris, France</h2>
-          <div class="date"></div>
+      <div id="cities">
+        <div class="city" id="paris">
+          <div class="date-city">
+            <h2>Paris, France</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small>AM</small></div>
         </div>
-        <div class="time"><small>AM</small></div>
-      </div>
 
-      <div class="city" id="newyork">
-        <div class="date-city">
-          <h2>New York, USA</h2>
-          <div class="date"></div>
+        <div class="city" id="newyork">
+          <div class="date-city">
+            <h2>New York, USA</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small>AM</small></div>
         </div>
-        <div class="time"><small>AM</small></div>
-      </div>
 
-      <div class="city" id="sydney">
-        <div class="date-city">
-          <h2>Sydney, Australia</h2>
-          <div class="date"></div>
+        <div class="city" id="sydney">
+          <div class="date-city">
+            <h2>Sydney, Australia</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small>AM</small></div>
         </div>
-        <div class="time"><small>AM</small></div>
       </div>
       <br />
       <br />

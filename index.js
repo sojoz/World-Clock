@@ -26,5 +26,30 @@ function updateTime() {
     .tz("Australia/Sydney")
     .format("h:m:ss [<small>] A [</small>]");
 }
+
+//Drop down choices
+
+function updateCity(event) {
+  let cityTimezone = event.target.value;
+  let cityName = cityTimezone.replace("_", " ").split("/")[1];
+  let cityTime = moment.tz(cityTimezone);
+  let citiesElement = document.querySelector("#cities");
+
+  citiesElement.innerHTML = `
+        <div class="city">
+          <div class="date-city">
+            <h2>${cityName}</h2>
+            <div class="date">${cityTime.format("dddd Do [of] MMMM")}</div>
+          </div>
+          <div class="time">${cityTime.format(
+            "h:m:ss [<small>] A [</small>]"
+          )}</div>
+        </div>`;
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let citySelectElement = document.querySelector("#cityChoice");
+citySelectElement.addEventListener("change", updateCity);
+setInterval(updateCity, 1000);
