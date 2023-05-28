@@ -44,7 +44,10 @@ function updateCity(event) {
           <div class="time">${cityTime.format(
             "h:m:ss [<small>] A [</small>]"
           )}</div>
-        </div>`;
+        </div>
+         <br>
+         <br>
+        <a href= "/" class= "allCitiesLink"> Go back to all cities </a> `;
 }
 
 function updateCity(event) {
@@ -64,7 +67,10 @@ function updateCity(event) {
         <div class="time">${cityTime.format(
           "h:mm:ss "
         )}<small>${cityTime.format("A")}</small></div>
-            </div>`;
+            </div>
+            <br>
+            <br>
+            <a href= "/" class= "allCitiesLink"> Go back to all cities </a>`;
   setTimeout(() => {
     updateCity(event);
   }, 1000);

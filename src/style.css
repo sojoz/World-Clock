@@ -17,11 +17,11 @@ body {
 
 .drop-down-menu {
   display: inline-block;
-  width: 200px;
+  width: 400px;
   text-align: center;
-  font-family: FreeMono, monospace;
+  font-family: sans-serif;
   padding: 8px;
-  margin: 0px 0px 0px 100px;
+  margin: 0px 0px 0px 0px;
   border-radius: 4px;
 }
 
@@ -42,7 +42,7 @@ body {
 h1 {
   text-align: center;
   color: #2f3c4f;
-  font-family: Courier, monospace;
+  font-family: sans-serif;
 }
 
 h2 {
@@ -72,6 +72,20 @@ h2 {
   font-size: 18px;
   line-height: 36px;
   vertical-align: middle;
+}
+.allCitiesLink {
+  text-decoration: none;
+  text-align: center;
+  color: #2f3c4f;
+  font-size: 15px;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+.allCitiesLink:hover {
+  cursor: pointer;
+  color: darkmagenta;
+  transition: all 200ms ease-in-out;
 }
 
 footer {
